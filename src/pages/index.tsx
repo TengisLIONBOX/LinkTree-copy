@@ -10,8 +10,6 @@ export default function Home() {
     setChecked(!checked);
   };
 
-  console.log(checked);
-
   return (
     <div>
       <Head>
