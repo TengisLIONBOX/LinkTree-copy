@@ -49,7 +49,9 @@ export default function Home() {
 
             <p
               className={
-                checked ? "text-black pt-1 text-lg" : "text-white pt-1 text-lg"
+                checked
+                  ? "text-black pt-1 text-lg pb-2"
+                  : "text-white pt-1 text-lg pb-2"
               }
             >
               @TengisLIONBOX
@@ -66,7 +68,7 @@ export default function Home() {
               <div className="w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
             </label>
 
-            <div className="pt-[40px] flex flex-col gap-[13px]">
+            <div className="pt-[20px] flex flex-col gap-[13px]">
               {data.map((el) => {
                 const ilink = el.link;
                 return (
